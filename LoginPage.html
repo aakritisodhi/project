@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+Login page
+</title>
+</head>
+<body style="background-color:#ffcccc;">
+<h1 style="font-family:Palatino;text-align:center;font-size:30pt;
+color:black;">
+Login Page
+</h1>
+<form name="login">
+<h2 style="font-family:palatino;text-align:left;font-size:20pt;color:black;">Username</h3><input type="text" name="userid"/><br><br>
+<h2 style="font-family:palatino;text-align:left;font-size:20pt;color:black;">Password</h3><input type="password" name="psw"/><br><br>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/><br>
+</form>
+<script language="javascript">
+function check(form)
+{
+ if(form.userid.value == "aakriti" && form.psw.value == "password")
+  {
+    window.open('Product Page.html')
+}
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+
+</script>
+</body>
+</html>

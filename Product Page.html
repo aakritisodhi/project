@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Product Page
+</title>
+</head>
+<body style="background-color:#ffaa80;">
+<h1 style="font-family:Courier;text-align:center";font-size:20pt;
+color:black;>
+Product Page
+</h1>
+<h2 style="font-family:Courier;text-align:center";font-size:20pt;
+color:black;>FILL THE INFORMATION:</h2>
+<form name="form">
+<h3 style="font-family:Courier;">Product ID</h3><input type="text" name="pid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/><br>
+<h3 style="font-family:Courier;">Product Name</h3><input type="text" name="pname"/><br>
+<h3 style="font-family:Courier;">Product Price</h3><input type="number" name="pp"/><br>
+<h3 style="font-family:Courier;">Product Quantity</h3><input type="number" name="pqty"/><br><br>
+
+<input type="button" onclick="check()" value="Login"/>
+<input type="reset" value="Cancel"/><br>
+</form>
+<script language="javascript">
+function check()
+{
+var pid=document.form.pid.value;
+var pname=document.form.pname.value;
+var pp=document.form.pp.value;
+var pqty=document.form.pqty.value;
+
+ if(pid == "123@#" && pname == "tea" && pp == "500" && pqty == "250")
+ 
+ {
+	alert("Product ID: "+pid+"\nProduct  Name: "+pname+"\nProduct Price: "+pp+"\nproduct quantity: "+pqty);
+    //window.open('Product Display Page.html');
+	
+}
+ else
+ {
+   alert("Invalid Details");
+  }
+}
+
+</script>
+</body>
+</body>
+</html>
